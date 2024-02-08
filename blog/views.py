@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .models import Post
 
 def home(request):
-    # Used a dictionary 'context' to get data from dictionary 'posts'
+    
     context = {
         'posts': Post.objects.all()
 
