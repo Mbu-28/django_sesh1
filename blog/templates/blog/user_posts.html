@@ -2,6 +2,8 @@
 
 {% block content%}
 
+    <h1 class="mb-3">Posts by {{ view.kwargs.username }} ({{ page_obj.paginator.count }})</h1>
+
     {% comment %} Used a for loop to render user posts {% endcomment %}
         {% for post in posts %}
         <article class="media content-section">
@@ -38,5 +40,3 @@
 
         {% endif %}
 {% endblock content %}
-
-    
